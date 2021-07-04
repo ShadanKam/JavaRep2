@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.query.Query;
 import com.learnersacademy.model.LoginUser;
 import com.learnersacademy.utils.HibernateUtil;
 
@@ -20,7 +19,7 @@ public class LoginUserDAO {
 
 			transaction = session.beginTransaction();
 			
-		     Query query  = session.createQuery("From LoginUser lu "
+		     var query  = session.createQuery("From LoginUser lu "
 		     		+ " Where lu.userName = :userName"
 		    		+ " and lu.password = :password"
 		    		+ " and lu.role = :role "	);

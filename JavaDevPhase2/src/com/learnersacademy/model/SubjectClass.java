@@ -24,7 +24,6 @@ public class SubjectClass {
 
 	public SubjectClass() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public SubjectClass(Subject subject, Sclass sclass) {

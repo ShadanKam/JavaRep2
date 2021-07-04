@@ -35,7 +35,6 @@ public class LoginServlet extends HttpServlet {
 		try {
 			 encryptPassword= encryptionDecryptionAES.encrypt(password);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
